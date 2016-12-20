@@ -1,0 +1,20 @@
+Package: lxc
+Version: 2.0.6-1
+Architecture: amd64
+Pre-Depends: multiarch-support
+Depends: python3 (>= 3.4.0), libapparmor1 (>= 2.6~devel), libmpdec2 (>= 2.4.0), libc6 (>= 2.9), libcap2 (>= 2.10), libseccomp2 (>= 2.1.0)
+Recommends: debootstrap, openssl, rsync
+Conflicts: lxc-dev
+Replaces: lxc-dev
+Section: admin
+Priority: optional
+Homepage: http://linuxcontainers.org/
+Description: Linux Containers userspace tools
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package provides the lxc-* tools, which can be used to start a single
+ daemon in a container, or to boot an entire "containerized" system, and to
+ manage and debug your containers.

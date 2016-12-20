@@ -1,0 +1,27 @@
+# Template used to create this container: /usr/share/lxc/templates/lxc-download
+# Parameters passed to the template:
+# For additional config options, please look at lxc.container.conf(5)
+
+# Distribution configuration
+lxc.include = /usr/share/lxc/config/centos.common.conf
+lxc.arch = x86_64
+
+# Container specific configuration
+lxc.rootfs = /var/lib/lxc/test/rootfs
+
+lxc.start.auto = 1
+lxc.start.delay = 10
+
+
+# имя хоста виртуальной машины
+lxc.utsname = test
+
+# имя сетевого адаптера для этого контейнера на хостовой машине
+lxc.network.veth.pair = veth-10
+
+# сетевой адрес хоста
+lxc.network.ipv4 = 10.0.0.10/24
+
+# мак-адрес хоста
+lxc.network.hwaddr = 00:16:3e:03:cb:10
+

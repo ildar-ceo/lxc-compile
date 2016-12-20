@@ -2,6 +2,7 @@ Package: lxc
 Version: 2.0.6-1
 Architecture: amd64
 Pre-Depends: multiarch-support
+Maintainer: None
 Depends: python3 (>= 3.4.0), libapparmor1 (>= 2.6~devel), libmpdec2 (>= 2.4.0), libc6 (>= 2.9), libcap2 (>= 2.10), libseccomp2 (>= 2.1.0)
 Recommends: debootstrap, openssl, rsync
 Conflicts: lxc-dev

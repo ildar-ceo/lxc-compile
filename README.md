@@ -22,13 +22,13 @@ systemctl enable lxc-net
 
 Перед тем как запускать lxc убедитесь в правильной настройке файлов `/etc/subuid` и `/etc/subgid`. Для пользователей lxc и root должны быть выставлены следующие значения:
 
-`less /etc/subuid`
+**less /etc/subuid**
 ```
 lxc:1000000:65536
 root:1000000:65536
 ```
 
-`less /etc/subgid`
+**less /etc/subgid**
 ```
 lxc:1000000:65536
 root:1000000:65536
@@ -168,7 +168,7 @@ lxc.utsname = containername
 
 А в системе VPN IP должны быть уникальными.
 
-Сети:
+**Сети:**
 ```
 10.0.0.0/16 - Сеть LXC
 10.50.0.0/16 - Сеть Open VPN

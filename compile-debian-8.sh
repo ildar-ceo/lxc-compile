@@ -8,7 +8,7 @@ DIR_TMP=${SCRIPT_PATH}/tmp
 DIR_BUILD=${SCRIPT_PATH}/build
 DIR_INSTALL=/opt/lxc
 
-VERSION="2.0.6-1"
+VERSION="2.0.6-2"
 
 echo "Install started"
 step="$1"
@@ -24,7 +24,7 @@ case "$1" in
 		./autogen.sh
 		./configure --prefix=/usr --sysconfdir=/etc/lxc --localstatedir=/var \
 			--enable-python --enable-doc --disable-rpath --disable-lua --disable-selinux  \
-			--enable-tests --enable-cgmanager --enable-apparmor --enable-capabilities \
+			--enable-tests --enable-cgmanager --disable-apparmor --enable-capabilities \
 			--with-distro=debian
 		
 		popd

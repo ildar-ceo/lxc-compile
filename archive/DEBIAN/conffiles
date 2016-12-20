@@ -1,13 +1,5 @@
 /etc/lxc/default/lxc
 /etc/lxc/lxc/default.conf
-/etc/lxc/apparmor.d/lxc-containers
-/etc/lxc/apparmor.d/lxc/lxc-default-with-nesting
-/etc/lxc/apparmor.d/lxc/lxc-default-with-mounting
-/etc/lxc/apparmor.d/lxc/lxc-default-cgns
-/etc/lxc/apparmor.d/lxc/lxc-default
-/etc/lxc/apparmor.d/abstractions/lxc/container-base
-/etc/lxc/apparmor.d/abstractions/lxc/start-container
-/etc/lxc/apparmor.d/usr.bin.lxc-start
 /etc/lxc/init/lxc-instance.conf
 /etc/lxc/init/lxc.conf
 /etc/lxc/init/lxc-net.conf

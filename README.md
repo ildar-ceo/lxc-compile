@@ -77,7 +77,7 @@ lxc-create -t download -n test-ubuntu -- -d ubuntu -r xenial -a amd64
 ## Запуск тестового контейнера
 
 
-Откройте файл `nano /var/lib/lxc/test/config` и добавьте строчку:
+Откройте файл `nano /var/lib/lxc/test-centos/config` и добавьте строчку:
 ```
 lxc.network.ipv4 = 10.0.1.5/16
 ```

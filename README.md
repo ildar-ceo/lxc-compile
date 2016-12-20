@@ -13,9 +13,10 @@ dpkg -i ./lxc_2.0.6-1_amd64.deb
 ```
 
 Включаем LXC в автозагрузку:
+```
 systemctl enable lxc
 systemctl enable lxc-net
-
+```
 
 ## Настройка UID/GID
 
